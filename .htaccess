@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}% !-f
+RewriteCond %{REQUEST_FILENAME}% !-d
+
+
+RewriteRule quanly.html index.php?controller=admin&action=index
+
+
+RewriteRule dang-nhap.html index.php?controller=login1&action=dangnhap
+RewriteRule dang-ky.html index.php?controller=login1&action=dangky
+RewriteRule dang-xuat.html index.php?controller=login1&action=dangxuat
+
+RewriteRule add-news.html index.php?controller=news&action=create
+
+RewriteRule profile.html index.php?controller=user&action=daduyet
+RewriteRule tin-dang-cho.html index.php?controller=user&action=dangcho
+RewriteRule tin-tu-choi.html index.php?controller=user&action=tuchoi
